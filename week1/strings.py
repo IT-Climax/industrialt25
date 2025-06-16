@@ -34,8 +34,8 @@ fullname = "Bosun, Adeniyi"
 # print("Hello!", full_name)
 # print(f'Hello! {first_name}, {last_name}')
 
-# repeat = "Hi!" * 100
-# print(repeat)
+repeat = "Hi!" * 100
+print(repeat)
 
 sliced = full_name[0:5]
 print(sliced)
@@ -45,36 +45,42 @@ print(sliced)
 slicedInit = full_name[7]
 print(f"{slicedInit}. {first_name}")
 
-# # Lesson 3: Escape Characters & Formatting
-# item = "Pen"
-# price = 50
-# receipt = f"You bought a {item}\nTotal: \tN{price}"
-# print(receipt)
+# Lesson 3: Escape Characters & Formatting
+item = "Pen"
+price = 50
+receipt = f"You bought a {item}\nTotal: \tN{price}"
+print(receipt)
 
 # STRING METHODS
 
-# # Lesson 4: Case Methods
-# text = "python is Fun"
-# print(text.title())
-# print(text.upper())
-# print(text.swapcase())
+# Lesson 4: Case Methods
+text = "python is Fun"
+print(text.title())
+print(text.upper())
+print(text.swapcase())
 
-# # Lesson 5: Search and Check Methods
-# sentence = "Hello, welcome to Python class."
-# print(sentence.find("Python"))
-# print(sentence.startswith("Hello"))
-# print("1234".isdigit())
+# Lesson 5: Search and Check Methods
+sentence = "Hello, welcome to Python class."
+print(sentence.find("Python"))
+print(sentence.startswith("Hello"))
+print("12345".isdigit())
 
-# # Lesson 6: Split and Join
-# words = sentence.split()
-# print(words)
-# joined = "-".join(words)
-# print(joined)
+print("Check full name",full_name.endswith("Hello"))
+print("Check full name",full_name.startswith("Bosun"))
 
-# # Lesson 7: Strip and Clean Text
-# dirty = "   Hello, Python!   "
-# clean = dirty.strip()
-# print(clean)
+
+
+# Lesson 6: Split and Join
+words = sentence.split()
+print(words)
+joined = "_".join(words)
+print(joined)
+
+# Lesson 7: Strip and Clean Text
+dirty = "   Hello, Python!   "
+clean = dirty.strip()
+print(clean)
+ 
 
 # STRING LOGIC
 
