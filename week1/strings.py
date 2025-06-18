@@ -11,119 +11,135 @@ We are glad you are here with us today.
 Your presence is most value and we will give you the best any client can offer
 """
 
-greeting = "How are you!"
-question = "what would you have me for you today!"
+# greeting = "How are you!"
+# question = "what would you have me for you today!"
 
-# Count
-print("Character count:", len(school))
-print("Data type", type(school2))
-
-
-# Lesson 1: Understanding Strings
-name = "Bosun"
-message = '''Welcome to Python!'''
-print(type(name))
+# # Count
+# print("Character count:", len(school))
+# print("Data type", type(school2))
 
 
-# # Lesson 2: String Operations
-first_name = "Bosun"
-last_name = "Adeniyi"
+# # Lesson 1: Understanding Strings
+# name = "Bosun"
+# message = '''Welcome to Python!'''
+# print(type(name))
 
-full_name = first_name + ", " + last_name
-fullname = "Bosun, Adeniyi"
-# print("Hello!", full_name)
-# print(f'Hello! {first_name}, {last_name}')
 
-repeat = "Hi!" * 100
-print(repeat)
+# # # Lesson 2: String Operations
+# first_name = "Bosun"
+# last_name = "Adeniyi"
 
-sliced = full_name[0:5]
-print(sliced)
+# full_name = first_name + ", " + last_name
+# fullname = "Bosun, Adeniyi"
+# # print("Hello!", full_name)
+# # print(f'Hello! {first_name}, {last_name}')
 
-# class work: print out firstname and Initial of the the surname e.g "A. Bosun"
+# repeat = "Hi!" * 100
+# print(repeat)
 
-slicedInit = full_name[7]
-print(f"{slicedInit}. {first_name}")
+# sliced = full_name[0:5]
+# print(sliced)
 
-# Lesson 3: Escape Characters & Formatting
-item = "Pen"
-price = 50
-receipt = f"You bought a {item}\nTotal: \tN{price}"
-print(receipt)
+# # class work: print out firstname and Initial of the the surname e.g "A. Bosun"
+
+# slicedInit = full_name[7]
+# print(f"{slicedInit}. {first_name}")
+
+# # Lesson 3: Escape Characters & Formatting
+# item = "Pen"
+# price = 50
+# receipt = f"You bought a {item}\nTotal: \tN{price}"
+# print(receipt)
 
 # STRING METHODS
 
-# Lesson 4: Case Methods
-text = "python is Fun"
-print(text.title())
-print(text.upper())
-print(text.swapcase())
+# # Lesson 4: Case Methods
+# text = "python is Fun"
+# print(text.title())
+# print(text.upper())
+# print(text.swapcase())
 
-# Lesson 5: Search and Check Methods
-sentence = "Hello, welcome to Python class."
-print(sentence.find("Python"))
-print(sentence.startswith("Hello"))
-print("12345".isdigit())
+# # Lesson 5: Search and Check Methods
+# sentence = "Hello, welcome to Python class."
+# print(sentence.find("Python"))
+# print(sentence.startswith("Hello"))
+# print("12345".isdigit())
 
-print("Check full name",full_name.endswith("Hello"))
-print("Check full name",full_name.startswith("Bosun"))
+# print("Check full name",full_name.endswith("Hello"))
+# print("Check full name",full_name.startswith("Bosun"))
 
 
 
-# Lesson 6: Split and Join
-words = sentence.split()
-print(words)
-joined = "_".join(words)
-print(joined)
+# # Lesson 6: Split and Join
+# words = sentence.split()
+# print(words)
+# joined = "_".join(words)
+# print(joined)
 
-# Lesson 7: Strip and Clean Text
-dirty = "   Hello, Python!   "
-clean = dirty.strip()
-print(clean)
+# # Lesson 7: Strip and Clean Text
+# dirty = "   Hello, Python!   "
+# clean = dirty.strip()
+# print(clean)
  
+ #IF, If-else(elif), For, While, 
 
 # STRING LOGIC
 
-# # Lesson 8: String Loops & Conditionals
-# vowels = "aeiou"
-# word = "Hello"
-# vowel_count = 0
-# for letter in word.lower():
-#     if letter in vowels:
-#         vowel_count += 1
-# print(f"Vowels: {vowel_count}")
+# Lesson 8: String Loops & Conditionals
+vowels = "aeiou"
+word = "Hello"
+vowel_count = 0
+for letter in word.lower():
+    if letter in vowels:
+        vowel_count += 1
+print(f"Vowels: {vowel_count}")
 
-# # Palindrome Checker
-# def is_palindrome(word):
-#     return word == word[::-1]
+# a = 33
+# b = 22
+# if b > a:
+#   print("b is greater than a")
+# elif a == b:
+#   print("a and b are equal")
+# else:
+#    print("b is less than a Joshua")
 
-# print(is_palindrome("level"))
+# write a code to do binary search.
 
-# # Lesson 9: Mini Text Game - Word Scramble
-# def scramble(word):
-#     return ''.join(sorted(word))
+# Palindrome Checker
+def is_palindrome(word):
+    return word == word[::-1]
 
-# print("Scrambled: ", scramble("python"))
+print(is_palindrome("level"))
+
+# Lesson 9: Mini Text Game - Word Scramble
+def scramble(word):
+    return ''.join(sorted(word))
+
+print("Scrambled: ", scramble("python"))
 
 # ADVANCED STRING TECHNIQUES
 
-# # Lesson 10: Regular Expressions
-# import re
-# email = "user@example.com"
-# pattern = r"[\w.-]+@[\w.-]+\.\w+"
-# if re.match(pattern, email):
-#     print("Valid email")
-
+# Lesson 10: Regular Expressions
+import re
+email = "us.23_er@_example.com"
+pattern = r"[\w.-]+@[\w.-]+\.\w+"
+if re.match(pattern, email):
+    print("Valid email")
+else:
+    print("Invalid email")
 # # Lesson 11: Advanced Formatting
-# name = "Bosun"
-# score = 89.456
-# print(f"Name: {name:>10} | Score: {score:.2f}")
+name = "Bosun"
+score = 89.456
+print(f"Name: {name:>2} | Score: {score:.2f}")
 
-# # Lesson 12: Encoding/Decoding
-# text = "Encode this!"
-# encoded = text.encode("utf-8")
-# decoded = encoded.decode("utf-8")
-# print(decoded)
+# Lesson 12: Encoding/Decoding
+text = "Encode this!"
+encoded = text.encode("utf-8")
+encoded2 = text.encode("utf-32")
+decoded = encoded.decode("utf-8")
+decoded2 = encoded2.decode("utf-32")
+print(decoded)
+print(f"New encoding key: {decoded2}")
 
 # PRO-LEVEL STRING USE CASES
 
