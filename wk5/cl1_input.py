@@ -88,7 +88,6 @@ Output: You are 15 years old.
 
 5.
 Print the perimeter of a triangle
-Perimeter = 2 * (length + width)
 """
 
 
