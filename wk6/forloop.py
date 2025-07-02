@@ -1,4 +1,5 @@
 data = [1.6, 3.4, 5.5, 9.4]
+index =[0, 1,2,3]
 N = len(data)
 print(N)
 print(f'')
@@ -11,15 +12,15 @@ data.append(11.4)
 print(f"[{', '.join(str(x) for x in data)}]")
 
 index = 2
-x = data[index]
+samesame = data[index]
 print(data[index])
-print(x)
+print(samesame)
 
 
 carlist = ["Peugeot", "Toyota", "Honda", "Benz", "Lexus"]
-for auto in carlist:
-    print(auto)
-print(f"[{', '.join(str(auto) for auto in carlist)}]")
+for _ in carlist:
+    print(_)
+print(f"[{', '.join(str(_) for _ in carlist)}]")
 
 
 # Range function
@@ -100,3 +101,27 @@ print(pairs)
 
 # 2. Implement the prime number between 50 and 100
 # """
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+    return True
+
+def fibonacci_primes(count):
+    fib_primes = []
+    a, b = 0, 1
+    while len(fib_primes) < count:
+        if is_prime(a):
+            fib_primes.append(a)
+        a, b = b, a + b
+    return fib_primes
+
+# Get first 25 prime numbers in the Fibonacci sequence
+prime_fibs = fibonacci_primes(25)
+print(prime_fibs)
